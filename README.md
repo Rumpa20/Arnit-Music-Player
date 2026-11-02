@@ -1,29 +1,40 @@
-# Arnit Music Player v1.7.0
+# Arnit Music Player v1.7.1
 
-New features:
-- Automatic online lyrics lookup via LRCLIB, triggered only when the user taps Search online. The app sends the current track title and artist (and album/duration when available) over HTTPS. No account or API key is required. User can review/edit and save lyrics locally.
-- Album and artist filters in the local music library.
-- Recently Played tab (last 50 locally played tracks).
-- Improved playlist management: remove individual tracks and clear the playlist.
-- Settings page with JSON Export Backup and Restore Backup using Android document picker.
+An Android music player built with Kotlin and Jetpack Compose.
 
-Existing features retained:
-- Offline library and direct HTTPS audio stream playback
+## Features
+
+- Offline music library and direct HTTPS audio stream playback
 - Album art and selectable light/dark backgrounds
-- Favorites, playlist and Media3 playback queue
+- Favorites, playlists, playback queue and folder browser
 - Equalizer, Bass Boost and Sleep Timer
-- Folder browser, search, app logo and adaptive launcher icon
+- Album and artist filters
+- Recently Played list
+- JSON backup export and restore
+- User-initiated online lyrics lookup via LRCLIB
 
-Package: `online.arnitcreation.musicplayer`
-Minimum Android: 8.0 (API 26)
+## Build information
 
-Privacy note: Online lyrics lookup is user-initiated. When requested, song title and artist (plus album and duration if available) are sent to LRCLIB over HTTPS. Library audio files are not uploaded. Backup files are created locally through Android's document picker.
+- Application ID: `online.arnitcreation.musicplayer`
+- Version name: `1.7.1`
+- Version code: `14`
+- Minimum Android: 8.0 (API 26)
+- Compile SDK: 36
+- Target SDK: 35
+- Java/Kotlin target: 17
 
-F-Droid preparation note: This is an open-source-oriented source project, not yet F-Droid-ready. Before submission, choose and include a compatible open-source license, verify all dependency licenses and build reproducibility, provide source repository and metadata, and test release builds. No binary APK is included in this source ZIP.
+Open the project in Android Studio or a compatible Android Gradle environment and build the `:app:assembleDebug` task. A successful build in one environment does not guarantee reproducible builds; release builds must be independently verified.
 
-This source has not been compiled or tested in the user's CodeOnTheGo environment. Build and test on-device before release.
+## Privacy
 
+Online lyrics lookup happens only when the user taps **Search online**. The app sends the current track title and artist, and album/duration when available, to LRCLIB over HTTPS. Local audio files are not uploaded. Backup files are created locally through Android's document picker.
+
+## F-Droid status
+
+This repository is source code for the project. It is **not yet approved or published on F-Droid**. Before submitting, verify all bundled assets and dependency licenses, confirm the source builds reproducibly with F-Droid's build server, and prepare and validate the official F-Droid metadata.
 
 ## License and contact
 
-Copyright © 2026 Abhijit Das. Project-owned source code: GNU GPL-3.0; see [LICENSE](LICENSE). Third-party components remain under their respective licenses. Contact: abhijitdas021984@gmail.com.
+Copyright © 2026 Abhijit Das. Project-owned source code is licensed under GNU GPL-3.0; see [LICENSE](LICENSE). Third-party components and assets remain under their respective licenses.
+
+Contact: abhijitdas021984@gmail.com
