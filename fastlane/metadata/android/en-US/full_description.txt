@@ -1,0 +1,14 @@
+Arnit Music Player lets you browse and play audio stored on your device, as well as online audio streams.
+
+Features:
+- Browse local audio files and folders.
+- Create playlists and manage favorites.
+- Manage the playback queue and recently played tracks.
+- Browse music by album and artist.
+- Use media controls, an equalizer, bass boost and a sleep timer.
+- Choose light or dark appearance and selectable backgrounds.
+- Export and restore app data using JSON backups.
+- Edit lyrics and optionally search for lyrics through LRCLIB.
+
+Privacy:
+Online lyrics search is optional and starts only when you request it. Track metadata is sent to LRCLIB for that search. Local audio files are not uploaded.
